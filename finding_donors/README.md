@@ -3,9 +3,8 @@
 ## 项目: 为CharityML寻找捐献者
 ### 安装
 
-这个项目要求使用 Python 2.7 并且需要安装下面这些python包：
+这个项目需要安装下面这些python包：
 
-- [Python 2.7](https://www.python.org/download/releases/2.7/)
 - [NumPy](http://www.numpy.org/)
 - [Pandas](http://pandas.pydata.org/)
 - [scikit-learn](http://scikit-learn.org/stable/)

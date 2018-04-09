@@ -72,11 +72,11 @@ def evaluate(results, accuracy, f1):
             for i in np.arange(3):
                 
                 # Creative plot code
-                ax[j/3, j%3].bar(i+k*bar_width, results[learner][i][metric], width = bar_width, color = colors[k])
-                ax[j/3, j%3].set_xticks([0.45, 1.45, 2.45])
-                ax[j/3, j%3].set_xticklabels(["1%", "10%", "100%"])
-                ax[j/3, j%3].set_xlabel("Training Set Size")
-                ax[j/3, j%3].set_xlim((-0.1, 3.0))
+                ax[j//3, j%3].bar(i+k*bar_width, results[learner][i][metric], width = bar_width, color = colors[k])
+                ax[j//3, j%3].set_xticks([0.45, 1.45, 2.45])
+                ax[j//3, j%3].set_xticklabels(["1%", "10%", "100%"])
+                ax[j//3, j%3].set_xlabel("Training Set Size")
+                ax[j//3, j%3].set_xlim((-0.1, 3.0))
     
     # Add unique y-labels
     ax[0, 0].set_ylabel("Time (in seconds)")
@@ -91,8 +91,8 @@ def evaluate(results, accuracy, f1):
     ax[0, 1].set_title("Accuracy Score on Training Subset")
     ax[0, 2].set_title("F-score on Training Subset")
     ax[1, 0].set_title("Model Predicting")
-    ax[1, 1].set_title("Accuracy Score on Validation Set")
-    ax[1, 2].set_title("F-score on Validation Set")
+    ax[1, 1].set_title("Accuracy Score on Testing Set")
+    ax[1, 2].set_title("F-score on Testing Set")
     
     # Add horizontal lines for naive predictors
     ax[0, 1].axhline(y = accuracy, xmin = -0.1, xmax = 3.0, linewidth = 1, color = 'k', linestyle = 'dashed')
@@ -115,7 +115,7 @@ def evaluate(results, accuracy, f1):
     
     # Aesthetics
     pl.suptitle("Performance Metrics for Three Supervised Learning Models", fontsize = 16, y = 1.10)
-    pl.tight_layout()
+    pl.subplots_adjust(top=0.85, bottom=0., left=0.10, right=0.95, hspace=0.3,wspace=0.35)
     pl.show()
     
 
@@ -161,4 +161,3 @@ def feature_plot(importances, X_train, y_train):
     pl.legend(loc = 'upper center')
     pl.tight_layout()
     pl.show() 
- 
