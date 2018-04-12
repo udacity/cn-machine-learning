@@ -9,7 +9,7 @@
 
 ## AWS
 
-由于此项目要求的计算量较大，建议使用亚马逊 p3.2xlarge 云服务器来完成该项目，参考：[在aws上配置深度学习主机 ](https://zhuanlan.zhihu.com/p/25066187)
+由于此项目要求的计算量较大，建议使用亚马逊 p3.2xlarge 云服务器来完成该项目，在使用 p3 之前，你可以先用 p2.xlarge 练手，参考：[在aws上配置深度学习主机 ](https://zhuanlan.zhihu.com/p/25066187)，[利用AWS学习深度学习](https://zhuanlan.zhihu.com/p/33176260)。
 
 ## 描述
 
@@ -24,17 +24,18 @@
 
 此外还有一个数据集也非常好，可以作为扩充数据集或是做检测/分割问题：[The Oxford-IIIT Pet Dataset](http://www.robots.ox.ac.uk/~vgg/data/pets/)
 
-![](http://www.robots.ox.ac.uk/~vgg/data/pets/pet_annotations.jpg)
+![](pet_annotations.jpg)
 
 ## 建议
 
-建议使用 OpenCV, tensorflow, Keras 完成该项目。其他的工具也可以尝试，比如 caffe, mxnet 等。
+建议使用 OpenCV, tensorflow, Keras 完成该项目。其他的工具也可以尝试，比如 pytorch, mxnet 等。
 
-* [OpenCV](https://github.com/opencv/opencv)
-* [OpenCV python tutorials](http://docs.opencv.org/3.1.0/d6/d00/tutorial_py_root.html)
-* [tensorflow](https://github.com/tensorflow/tensorflow)
-* [Keras](https://github.com/fchollet/keras)
-* [Keras 中文文档](http://keras-cn.readthedocs.io/)
+* [OpenCV 项目](https://github.com/opencv/opencv)
+* [tensorflow 项目主页](https://github.com/tensorflow/tensorflow)
+* [Keras 项目主页](https://github.com/fchollet/keras)
+* [OpenCV python tutorials](https://docs.opencv.org/master/d6/d00/tutorial_py_root.html)
+* [Keras 英文文档](https://keras.io)
+* [Keras 中文文档](https://keras.io/zh/)
 
 ### 建议模型
 
@@ -50,15 +51,15 @@
 
 参考 Keras 文档：[Documentation for individual models](https://keras.io/applications/#documentation-for-individual-models)
 
-# 最低要求
+## 最低要求
 
-本项目的最低要求是 kaggle Public Leaderboard 前10%。
+本项目的最低要求是 kaggle Public Leaderboard 前 10%。
 
-https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/leaderboard
+参考链接：[https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/leaderboard](https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/leaderboard)
 
 ## 应用(可选)(推荐)
 
-应用形式多种多样，可以是在本地调用摄像头跑的程序，也可以网页的，也可以是 iOS APP 或 Android APP，甚至可以是微信公众号。
+应用形式多种多样，可以是在本地调用摄像头跑的程序，也可以网页的，也可以是 iOS APP 或 Android APP，甚至可以是微信公众号或微信小程序。
 
 ### 网页应用
 
@@ -72,6 +73,8 @@ https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/leaderboard
 可以参考这个例子：[微信数字识别](https://github.com/ypwhs/wechat_digit_recognition)。
 
 网页接口部分可以参考 [Flask](https://github.com/pallets/flask) 而不必用 python cgi。
+
+最新建议：可以使用小程序而不是公众号，小程序更合适。
 
 ### iOS
 
@@ -97,13 +100,13 @@ OpenCV 的 iOS Framework 文件可以直接在这里下载：[OpenCV releases](h
 
 ## 评估
 
-你的项目会由优达学城项目评审师依照[机器学习毕业项目要求](https://review.udacity.com/#!/rubrics/273/view)来评审。请确定你已完整的读过了这个要求，并在提交前对照检查过了你的项目。提交项目必须满足所有要求中每一项才能算作项目通过。
+你的项目会由优达学城项目评审师依照[机器学习毕业项目要求](https://review.udacity.com/#!/rubrics/1785/view)来评审。请确定你已完整的读过了这个要求，并在提交前对照检查过了你的项目。提交项目必须满足所有要求中每一项才能算作项目通过。
 
 ## 提交
 
 * PDF 报告文件
 * 数据预处理代码（jupyter notebook）
 * 模型训练代码（jupyter notebook）
-* notebook 导出的 html 文件
+* 以上 notebook 导出的 html 文件
 * 应用代码（可选）
 * 包含使用的库，机器硬件，机器操作系统，训练时间等数据的 README 文档（建议使用 Markdown ）
