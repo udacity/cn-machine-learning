@@ -18,10 +18,10 @@
 
 ### 建议
 * 本项目是一个多分类问题, 类别不均衡
-![label_vis]()
+![label_vis](./label_vis.png)
 
 * 你可以对罪案类型的分布进行可视化, 构建一个犯罪地图, 这将是一个很不错的锻炼
-![location_vis]()
+![location_vis](./sf_top_crimes_map.png)
 _[图片来源](https://www.kaggle.com/benhamner/san-francisco-top-crimes-map/code)_
 
 ### 提交
