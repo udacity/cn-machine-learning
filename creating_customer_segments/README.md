@@ -3,7 +3,7 @@
 
 ### 安装
 
-这个项目要求使用 **Python 2.7** 并且需要安装下面这些python包：
+这个项目要求使用 **Python 3** 并且需要安装下面这些python包：
 
 - [NumPy](http：//www.numpy.org/)
 - [Pandas](http：//pandas.pydata.org)
