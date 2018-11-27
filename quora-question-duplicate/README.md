@@ -63,7 +63,7 @@ Quora 数据集训练集共包含40K的句子对，且其完全来自于Quora网
 
 * 包含使用的库，机器硬件，机器操作系统，训练时间等数据的 README 文档
 
-* 你的最优提交分数需要达到kaggle private leaderboard 的top 10%,对于该题目的就是330th/3307,对应logloss得分为0.15632
+* 你的最优提交分数需要达到kaggle private leaderboard 的top 20%,对于该题目的就是660th/3307,对应logloss得分为0.18267
 
 * 符合Udacity的[项目要求](https://review.udacity.com/#!/rubrics/273/view)。
 
