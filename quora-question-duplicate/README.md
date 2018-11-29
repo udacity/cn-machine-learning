@@ -13,6 +13,8 @@ Quora 数据集训练集共包含40K的句子对，且其完全来自于Quora网
 
 我们这里要求你使用Kaggle端的数据集，其由Train,Test两部分构成，你需要通过在Train数据集上进行验证集划分、建模，在Test数据集上进行测试，并且提交到Kaggle进行测评。
 
+**【IMPORTANT】**数据集下载地址：[Quora DataSet](https://www.kaggle.com/c/quora-question-pairs),请注册kaggle之后，点击同意加入比赛，方可下载数据集。
+
 数据集描述：
 
 
@@ -63,7 +65,7 @@ Quora 数据集训练集共包含40K的句子对，且其完全来自于Quora网
 
 * 包含使用的库，机器硬件，机器操作系统，训练时间等数据的 README 文档
 
-* 你的最优提交分数需要达到kaggle private leaderboard 的top 10%,对于该题目的就是330th/3307,对应logloss得分为0.15632
+* 你的最优提交分数需要达到kaggle private leaderboard 的top 20%,对于该题目的就是660th/3307,对应logloss得分为0.18267
 
 * 符合Udacity的[项目要求](https://review.udacity.com/#!/rubrics/273/view)。
 
