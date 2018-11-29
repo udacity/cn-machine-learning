@@ -13,6 +13,8 @@ Quora 数据集训练集共包含40K的句子对，且其完全来自于Quora网
 
 我们这里要求你使用Kaggle端的数据集，其由Train,Test两部分构成，你需要通过在Train数据集上进行验证集划分、建模，在Test数据集上进行测试，并且提交到Kaggle进行测评。
 
+**【IMPORTANT】**数据集下载地址：[Quora DataSet](https://www.kaggle.com/c/quora-question-pairs),请注册kaggle之后，点击同意加入比赛，方可下载数据集。
+
 数据集描述：
 
 
